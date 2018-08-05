@@ -53,3 +53,31 @@ body {
     height: 35px;
 }
 
+.header>.text-box {
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header>.text-box>.header-primary {
+    color: white;
+    text-transform: uppercase;
+}
+
+.header>.text-box>.header-primary>.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+
+}
+
+.header>.text-box>.header-primary>.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 17.4px;
+}
+
+
