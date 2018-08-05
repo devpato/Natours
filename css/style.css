@@ -33,5 +33,11 @@ body {
         url('../img/hero.jpg'); 
     background-size: cover;
     background-position: top; 
+
+    /*Giving shape to the picture*/
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    /*To make  triangle 50% 0, 100% 100%, 0 100%
+    https://bennettfeely.com/clippy/
+    */
 }
 
