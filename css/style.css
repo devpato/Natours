@@ -7,14 +7,19 @@ Dark green: #28b485
 
 */
 
-* {
+*, 
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
+     /* 80% of view port width which computes to
+      font-size of 10.25px for my laptop screen */
 }
 
 body {
@@ -24,6 +29,7 @@ body {
     line-height: 1.7;
     color: #777777;
     padding: 3rem;
+    box-sizing: border-box;
 }
 
 /* HEADER */
@@ -154,7 +160,7 @@ body {
 }
 
 btn:active {
-    transform: translateY(-.1em);
+    transform: translateY(-.1rem);
 }
 
 .btn-white {
@@ -187,4 +193,15 @@ btn:active {
 .btn-animated {
     animation: moveInBottom .5s ease-out .55s;
     animation-fill-mode: backwards;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 30%;
+    }
+
+   .heading-primary-main {
+    padding-left: 5%; 
+   }
 }
