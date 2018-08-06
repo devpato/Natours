@@ -53,17 +53,17 @@ body {
     position: relative;
 }
 
-.header>.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.header>.logo-box>.logo  {
+.header__logo  {
     height: 3.5rem;
 }
 
-.header>.text-box {
+.header__text-box {
     position: absolute;
     top:40%;
     left: 50%;
@@ -71,12 +71,12 @@ body {
     text-align: center;
 }
 
-.header>.text-box>.header-primary {
+.header-primary {
     color: white;
     text-transform: uppercase;
 }
 
-.header>.text-box>.header-primary>.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -86,7 +86,7 @@ body {
     animation-timing-function: ease-out
 }
 
-.header>.text-box>.header-primary>.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 400;
@@ -163,7 +163,7 @@ btn:active {
     transform: translateY(-.1rem);
 }
 
-.btn-white {
+.btn--white {
     background-color: #ffffff;
     color: #777;
 }
@@ -181,7 +181,7 @@ btn:active {
     transition: all .4s
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: white
 }
 
@@ -190,7 +190,7 @@ btn:active {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom .5s ease-out .55s;
     animation-fill-mode: backwards;
 }
@@ -201,7 +201,7 @@ btn:active {
         font-size: 30%;
     }
 
-   .heading-primary-main {
-    padding-left: 5%; 
+   .heading-primary--main {
+        padding-left: 5%; 
    }
 }
