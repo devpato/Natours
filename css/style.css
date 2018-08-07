@@ -102,7 +102,7 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.btn:link, .btn .btn:visited {
+.btn:link, .btn :visited {
   margin-top: 6rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -124,6 +124,8 @@ body {
 .btn--white {
   background-color: #ffffff;
   color: #777; }
+  .btn--white::after {
+    background-color: #ffffff; }
 
 .btn::after {
   content: "";
@@ -136,9 +138,6 @@ body {
   left: 0;
   z-index: -1;
   transition: all .4s; }
-
-.btn--white::after {
-  background-color: #ffffff; }
 
 .btn:active::after {
   transform: scaleX(1.4) scaleY(1.6);

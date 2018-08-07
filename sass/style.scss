@@ -154,7 +154,7 @@ body {
 }
 
 .btn {
-    &:link,.btn:visited {
+    &:link,:visited {
         margin-top: 6rem;
         text-transform: uppercase;
         text-decoration: none;
@@ -179,6 +179,10 @@ body {
     &--white {
         background-color: $white;
         color: $color-grey-dark;
+
+        &::after {
+            background-color: $white;
+        }
     }
    
     &::after {
@@ -194,10 +198,6 @@ body {
         transition: all .4s
     }
 
-    &--white::after {
-        background-color: $white;
-    }
-    
     &:active::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
