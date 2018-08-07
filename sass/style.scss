@@ -12,6 +12,7 @@ $color-primary-green-light: #55c57a;
 $color-primary-green-dark :#28b485;
 $color-grey-dark : #777;
 $white: #ffffff;
+$black:#000;
 
 *, 
 *::after,
@@ -163,7 +164,7 @@ body {
 
 .btn:hover {
     transform: translateY(-3rem);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba($black,.2);
 }
 
 btn:active {
