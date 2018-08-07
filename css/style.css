@@ -53,6 +53,25 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.74rem;
+    animation: moveInRight 1s ease-out;
+    backface-visibility: hidden; }
+
 /*LAYOUT*/
 /* HEADER */
 .header {
@@ -126,25 +145,6 @@ body {
   animation-fill-mode: backwards; }
 
 /*PAGES*/
-.heading-primary {
-  color: #ffffff;
-  text-transform: uppercase; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInleft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.74rem;
-    animation: moveInRight 1s ease-out;
-    backface-visibility: hidden; }
-
 /*Media Queries*/
 @media only screen and (max-width: 500px) {
   html {
