@@ -9,6 +9,9 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+/*COMPONENTS*/
+@import 'components/button';
+
 /*PAGES*/
 @import 'pages/home';
 
@@ -71,62 +74,6 @@
         letter-spacing: 1.74rem;
         animation: moveInRight 1s ease-out;
         backface-visibility: hidden;
-    }
-}
-
-.btn {
-    &:link,:visited {
-        margin-top: 6rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
-        display: inline-block;
-        border-radius: 10rem;
-        transition: all .2s;
-        font-weight: 400;
-        font-size: 1.8rem;
-        position: relative;
-    }
-
-    &:hover {
-        transform: translateY(-3rem);
-        box-shadow: 0 .5rem 1rem rgba($black,.2);
-    }
-
-    &:active {
-        transform: translateY(-.1rem);
-    }
-
-    &--white {
-        background-color: $white;
-        color: $color-grey-dark;
-
-        &::after {
-            background-color: $white;
-        }
-    }
-   
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s
-    }
-
-    &:active::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-    }
-
-    &--animated {
-        animation: moveInBottom .5s ease-out .55s;
-        animation-fill-mode: backwards;
     }
 }
 

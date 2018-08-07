@@ -22,51 +22,7 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
-/*PAGES*/
-/* HEADER */
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  /*Giving shape to the picture*/
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  /*To make  triangle 50% 0, 100% 100%, 0 100%
-    https://bennettfeely.com/clippy/
-    */
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-.heading-primary {
-  color: #ffffff;
-  text-transform: uppercase; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInleft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.74rem;
-    animation: moveInRight 1s ease-out;
-    backface-visibility: hidden; }
-
+/*CSS Animations*/
 @keyframes moveInleft {
   0% {
     opacity: 0;
@@ -78,6 +34,26 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    opacity: .5;
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/*COMPONENTS*/
 .btn:link, .btn :visited {
   margin-top: 6rem;
   text-transform: uppercase;
@@ -123,29 +99,54 @@ body {
   animation: moveInBottom .5s ease-out .55s;
   animation-fill-mode: backwards; }
 
+/*PAGES*/
+/* HEADER */
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  /*Giving shape to the picture*/
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  /*To make  triangle 50% 0, 100% 100%, 0 100%
+    https://bennettfeely.com/clippy/
+    */
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.74rem;
+    animation: moveInRight 1s ease-out;
+    backface-visibility: hidden; }
+
 /*Media Queries*/
 @media only screen and (max-width: 500px) {
   html {
     font-size: 30%; }
   .heading-primary--main {
     padding-left: 5%; } }
-
-/*CSS Animations*/
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    opacity: .5;
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
