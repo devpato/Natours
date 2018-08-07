@@ -145,6 +145,7 @@ body {
   animation-fill-mode: backwards; }
 
 /*PAGES*/
+/*MEDIA QUERIES*/
 /*Media Queries*/
 @media only screen and (max-width: 500px) {
   html {
