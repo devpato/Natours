@@ -1,3 +1,17 @@
+/*BASE*/
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utilities';
+
+/*ABSTRACT*/
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+/*PAGES*/
+@import 'pages/home';
+
 $color-primary-green: #7ed56f;
 $color-primary-green-light: #55c57a;
 $color-primary-green-dark :#28b485;
