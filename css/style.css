@@ -84,13 +84,16 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-  transition: all .2s; }
+  transition: all 0.2s; }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .u-center-text {
   text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
 
 /*LAYOUT*/
 /* HEADER */
@@ -120,7 +123,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -130,7 +132,6 @@ body {
     clear: both; }
   .row .col-1-of-2 {
     width: calc((100% - 8rem) / 2);
-    background-color: orangered;
     float: left; }
     .row .col-1-of-2:not(:last-child) {
       margin-right: 8rem; }
