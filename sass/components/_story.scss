@@ -18,15 +18,42 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); //since you can't have 2 translates in the same object
+    position: relative;
   }
 
   &__img {
     height: 100%;
+    transform: translateX(-4rem) scale(1.2);
+    backface-visibility: hidden;
+    transition: all 0.5s;
   }
 
   &__text {
-    transform: skewX(
-      12deg
-    ); // make the oposotin lean of parent object so looks staight
+    // make the oposotin lean of parent object so looks staight
+    transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden; //to fix glitch
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -20%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }
