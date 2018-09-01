@@ -89,12 +89,4 @@
     opacity: 1;
     width: 100%;
   }
-  // FUNCTIONALITY
-  &__checkbox:not(:checked) ~ &__background {
-    transform: scale(0);
-  }
-  &__checkbox:not(:checked) ~ &__nav {
-    opacity: 0;
-    width: 0%;
-  }
 }
