@@ -15,8 +15,7 @@
       $color-primary-green-dark
     );
     z-index: 1000;
-    transition: transform 0.8s;
-    // transform: scale(0);
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   }
   &__button {
     background-color: $white;
@@ -38,7 +37,7 @@
     z-index: 1500;
     opacity: 0;
     width: 0;
-    transition: all 0.8s;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   &__list {
     position: absolute;
@@ -73,6 +72,7 @@
         margin-right: 1.5rem;
         display: inline-block;
       }
+      width: 350px;
     }
     &:hover,
     &:active {
