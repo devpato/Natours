@@ -82,7 +82,7 @@
       transform: translateX(1rem);
     }
   }
-  // FUNCTIONALITY
+  // MENU ICON FUNCTIONALITY
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
