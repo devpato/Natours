@@ -11,11 +11,16 @@
   background-position: top;
 
   /*Giving shape to the picture*/
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /*To make  triangle 50% 0, 100% 100%, 0 100%
     https://bennettfeely.com/clippy/
     */
+
+  @include response(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
   position: relative;
 
   &__logo-box {
