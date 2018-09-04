@@ -1,18 +1,30 @@
-*, 
+*,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-     /* 80% of view port width which computes to
+  font-size: 62.5%; //1rem - 10px; 10/16px = 62.5%;
+  /* 80% of view port width which computes to
       font-size of 10.25px for my laptop screen */
+
+  @include response(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include response(tab-port) {
+    font-size: 50%; //1rem = 8px, 8/16 = 50%
+  }
+
+  @include response(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
