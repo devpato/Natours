@@ -18,6 +18,11 @@ body {
     animation-name: moveInleft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include response(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -27,6 +32,9 @@ body {
     letter-spacing: 1.74rem;
     animation: moveInRight 1s ease-out;
     backface-visibility: hidden;
+    @include response(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -44,6 +52,12 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+  @include response(tab-port) {
+    font-size: 3rem;
+  }
+  @include response(phone) {
+    font-size: 2.5rem;
+  }
   &:hover {
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
